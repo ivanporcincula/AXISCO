@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXISCO.</title>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="navigation_styles.css"/>
+    <link rel="stylesheet" href="content_styles.css"/>
+    
+</head>
+<body>
+    
+    <!-- NAVIGATION TAB -->
+    <div class="nav-container" id="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">AXISCO.</h1>
+            <ul class="nav-menu">
+
+                <!-- LAPTOPS -->
+                <li>
+                    <a class="nav-links laptop-btn" id="laptop">
+                        Laptops 
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <div class="dropdown-content-laptop" id="laptop-drop-down">
+                        <a id="acer">Acer</a>
+                        <a id="asus">Asus</a>
+                        <a id="dell">Dell</a>
+                        <a id="gigabyte">Gigabyte</a>
+                        <a id="msi">MSI</a>
+                    </div>
+                </li>
+
+                <!-- PC COMPONENTS -->
+                <li>
+                    <a class="nav-links pc-btn" id="pc-comp">
+                        PC Components <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <div class="dropdown-content" id="pc-comp-drop-down">
+                        <a id="processor_nav">Processor</a>
+                        <a id="motherboard_nav">Motherboard</a>
+                        <a id="ram_nav">RAM</a>
+                        <a id="storage_nav">Storage</a>
+                        <a id="gpu_nav">Graphics Card</a>
+                        <a id="pc_case_nav">PC Case</a>
+                        <a id="psu_nav">Power Supply Unit</a>
+                        <a id="fan_nav">Cooling Solutions</a>
+                    </div>
+                </li>
+
+                <!-- PERIPHERALS -->
+                <li>
+                    <a class="nav-links peripheral-btn" id="peripherals">
+                        Peripherals 
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <div class="dropdown-content-peripherals" id="peripheral-drop-down">
+                        <a id="mk_nav">Mouse & Keyboard</a>
+                        <a id="audio_nav">Audio</a>
+                        <a id="monitor_nav">Monitor</a>
+                    </div>
+
+                    
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- DIALOGUE BOX -->
+    <div class="checkout-dialogue-box" id="dialogue-price">
+        <div class="header">
+            <p>CHECKOUT MESSAGE</p>
+        </div>
+        <h4>Amount to pay:</h4>
+        <div class="dialogue-message" id="price-to-pay">
+            <p>₱0.00</p>
+        </div>
+
+        <button class="dialogue-button" id="proceed">
+            Proceed
+        </button>
+        <button class="dialogue-button" id="cancel">
+            Cancel
+        </button>     
+    </div>
+
+    <div class="checkout-dialogue-box" id="thank-you-dialogue">
+        <div class="header">
+            <p>Thank you!</p>
+        </div>
+  
+        <div class="dialogue-message thank-you" id="thank-you">
+            <p>Thank you for shopping! <br>We hope to see you again soon!</p>
+        </div>
+        <button class="dialogue-button-ok" id="ok">
+            OK
+        </button>
+    </div>
+
+    <!--PAGE DIVIDER-->
+    <div class="page-column-divider">
+        
+        <!-- Checkout etc. -->
+        <div class="page-brand-checkout left" id="checkout-product">
+            <div class="checkout-card" id="checkout-product-card">
+                <h1>Shopping Cart</h1>
+                <div class="overflow-container" id="container-overflow">
+                    <!-- DOM MANIPULATION -->
+                    <!--DO NOT DELETE, FOR FUTURE REFERENCES.-->
+                    <!-- <hr>
+                    <div class="checkout-row">
+                        <i class="fa fa-times x-button" aria-hidden="true"></i>
+                        <div class="checkout-column c-left">
+                          <div class="product-img">
+                              <img class="product-image" id="image" src="laptop_images\acer\ACER ASPIRE 5 A514-54-37V6.jpg" alt="Acer Aspire 5 A514-54-37V6">
+                          </div>
+                        </div>
+                        <div class="checkout-column c-right">
+                          <div class="product-name">
+                              <h3>Acer Aspire 5 A514-54-37V6 14"</h3>
+                          </div>
+                          <div class="product-description">
+                              <p>Windows 10, i3-111564, 8 GB RAM, 256 GB NVMe M.2 SSD, Intel UHD Graphics</p>
+                          </div>
+                          <div class="checkout-product-price">
+                              <h4>
+                                  ₱29,500.00
+                              </h4>
+                          </div>
+                        </div>
+                    </div> -->
+
+                    <!-- dito -->
+                </div>
+            
+                <hr id="total-separator">
+                <div class="outside-row">
+                    <div class="outside-column out-c-right total">
+                        <h4>TOTAL:</h4>
+                    </div>
+                    <div class="outside-column out-c-left number-total" id="total-of-products">
+                        <h4>₱0.00</h4>
+                        
+                    </div>
+                    <button class="checkout-button" id="checkout-btn">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+            <!-- DULO NG CARD -->
+        </div>
+
+        <!-- Product Display -->
+        <div class="page-product-display right" id="page-product">
+            <!-- DOM MANIPULATION -->
+            <!--DO NOT DELETE, FOR FUTURE REFERENCES.-->
+            <!-- <div class="product-row">
+                <div class="product-column">
+                    <div class="product-card">
+                        <div class="overlay">
+                            <div class="cart-button" id="10000">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h6>ADD TO CART</h6>
+                            </div>
+                            
+                        </div>
+                        <div class="product-id">
+                            <p>10000</p>
+                        </div>
+
+                        <div class="product-img">
+                            <img class="product-image" id="image" src="laptop_images\acer\ACER ASPIRE 5 A514-54-37V6.jpg" alt="Acer Aspire 5 A514-54-37V6">
+                        </div>
+                        
+                        <div class="product-name">
+                            <hr>
+                            <h3>Acer Aspire 5 A514-54-37V6 14"</h3>
+                        </div>
+                        
+                        <div class="product-description">
+                            <p>Windows 10, i3-111564, 8 GB RAM, 256 GB NVMe M.2 SSD, Intel UHD Graphics</p>
+                        </div>
+
+                        <div class="product-price">
+                            <h3>
+                                ₱29,500.00
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div> -->         
+        </div>
+        
+    </div>
+    
+    <script src="https://kit.fontawesome.com/9560b283f1.js" crossorigin="anonymous"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
+
+
